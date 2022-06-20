@@ -16,6 +16,9 @@ const GameplayVideoSection = () => {
 	        <CardMedia
 			  component="video" 
 			  controls 
+			  muted
+			  autoPlay
+			  loop 
 			  src={require('./assets/video/Gameplay_1.mp4')} 
 			  sx ={{
 			  	width: {xs:'100%', sm:'80%', md: '50%'},
