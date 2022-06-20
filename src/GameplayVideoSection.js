@@ -1,11 +1,5 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid'
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CardMedia from '@mui/material/CardMedia';
 
 const GameplayVideoSection = () => {

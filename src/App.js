@@ -2,7 +2,6 @@ import ResponsiveAppBar from './ResponsiveAppBar';
 import HeroSection from './HeroSection';
 import GameplaySection from './GameplaySection';
 import GameplayVideoSection from './GameplayVideoSection';
-import AboutUsSection from './AboutUsSection';
 import Footer from './Footer';
 import { createTheme, ThemeProvider, ThemeOptions } from '@mui/material/styles';
 
