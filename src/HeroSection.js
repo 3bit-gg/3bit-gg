@@ -47,7 +47,7 @@ const HeroSection = () => {
 					</Stack>
 		     	</Grid>
 		     	<Grid item 
-		     		xs={10} sm={5} md={4} lg={3} 
+		     		xs={8} sm={5} md={4} lg={3} 
 		     		order={{ xs: 1, sm: 2 }}
 		     		sx={{
 			        	textAlign: 'center',
