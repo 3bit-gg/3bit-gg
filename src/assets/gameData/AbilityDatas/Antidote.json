@@ -1,0 +1,1 @@
+{"AbilityID":"Antidote","AbilityName":"Antidote","AbilityDescription":"Cures a nearby unit, removing any poison effects","EnergyCost":1,"AbilityStrength":0,"Modifier":0,"Type":1,"EffectSize":0,"StartPosition":1,"ProjectileType":0,"EffectDisplay":0,"SummonableUnitID":"","ApplicableStatusID":"","RemovableStatusID":"Poison","ImmediateSelfCast":false}

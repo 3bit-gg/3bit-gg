@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid'
 import Stack from '@mui/material/Stack';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
 	return (
@@ -43,7 +44,9 @@ const HeroSection = () => {
 					        alt="3bit"
 					        src={require('./assets/png/3bit_tactics.png')} 
 				      	/>
-				      	<Button sx={{my: 4, mx: 'auto', width:"70%"}} variant="outlined" color='white'>Play</Button>
+				      	<Link style={{display: 'flex'}} to="/play">
+				      		<Button sx={{my: 4, mx: 'auto', width:"70%"}} variant="outlined" color='white'>Play</Button>
+				      	</Link>
 					</Stack>
 		     	</Grid>
 		     	<Grid item 
@@ -67,7 +70,7 @@ const HeroSection = () => {
 	        	fontSize: 50,
 	        	width: "100pt",
 	        	position: "absolute",
-	        	left: "calc(50vw - 50pt)",
+	        	left: "calc(50vw - 56pt)",
 	        	bottom: "10pt"
 	        }} />
 		</Container>

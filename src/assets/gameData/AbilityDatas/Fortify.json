@@ -1,0 +1,1 @@
+{"AbilityID":"Fortify","AbilityName":"Fortify","AbilityDescription":"Give an adjacent unit the shielded status, blocking one direct damage next turn ","EnergyCost":2,"AbilityStrength":0,"Modifier":0,"Type":1,"EffectSize":0,"StartPosition":0,"ProjectileType":0,"EffectDisplay":0,"SummonableUnitID":"","ApplicableStatusID":"Shield","RemovableStatusID":"","ImmediateSelfCast":false}

@@ -1,0 +1,1 @@
+{"AbilityID":"Ward","AbilityName":"Ward","CustomAbilityDescription":"Summon a 1 health ward at the target location","EnergyCost":2,"AbilityStrength":0,"Modifier":0,"Type":4,"EffectSize":0,"StartPosition":1,"ProjectileType":0,"EffectDisplay":0,"SummonableUnitID":"Ward","ApplicableStatusID":"","RemovableStatusID":"","ImmediateSelfCast":false}

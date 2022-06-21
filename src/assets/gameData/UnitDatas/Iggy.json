@@ -1,0 +1,1 @@
+{"UnitID":"Iggy","UnitName":"Iggy","MaxHealth":3,"MoveDistance":1,"MoveCost":1,"Neutral":false,"Selectable":true,"Modifier":0,"AbilityIDs":["Fireball","LavaRock"],"StatusIDs":["ExplodeOnDeath"]}

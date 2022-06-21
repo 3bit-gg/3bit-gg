@@ -1,14 +1,22 @@
 import ResponsiveAppBar from './ResponsiveAppBar';
-import HeroSection from './HeroSection';
-import GameplaySection from './GameplaySection';
-import GameplayVideoSection from './GameplayVideoSection';
 import Footer from './Footer';
+import Home from './Home';
+import Play from './Play';
+import Bitdex from './Bitdex';
 import { createTheme, ThemeProvider, ThemeOptions } from '@mui/material/styles';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 export const themeOptions: ThemeOptions = {
   palette: {
     primary: {
       main: '#6D66FF',
+    },
+    card: {
+      background: '#484848',
+      health: '#FF6D5F',
+      energy: '#00FFFC',
+      abilityInfoBackground: 'rgba(0,0,0,0.2)',
+      abilityInfoDescriptionText: 'rgba(255,255,255,0.5)'
     },
     white: {
       main: '#FFFFFF',
@@ -53,7 +61,6 @@ export const themeOptions: ThemeOptions = {
       color: 'inherit',
     },
   },
-  shadows: ["none"]
 };
 
 const theme = createTheme(themeOptions);
@@ -62,11 +69,17 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <ResponsiveAppBar/>
-        <HeroSection/>
-        <GameplaySection/>
-        <GameplayVideoSection/>
-        <Footer/>
+
+        <Router>
+            <ResponsiveAppBar/>
+            <Routes>
+              <Route path="/" element={<Home/>} exact />
+              <Route path="/play" element={<Play/>} />
+              <Route path="/bitdex" element={<Bitdex/>} />
+            </Routes>
+             <Footer/>
+        </Router>
+       
       </ThemeProvider>
     </div>
   );

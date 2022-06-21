@@ -1,0 +1,20 @@
+import * as React from 'react';
+import BitCard from './BitCard'
+import Grid from '@mui/material/Grid'
+import Container from '@mui/material/Container'
+
+const bits = ['Cocoda', 'Draka', 'Gyrobee', 'Rotobot', 'Syphos'];
+
+const Bitdex = () => {
+	return (
+	 	<Container sx={{ p: '0', pt: 10 }} maxWidth='lg'>
+		 	<Grid container spacing={2} justifyContent="center" alignItems="center">
+            	{bits.map((bit) => (
+      				<BitCard bit={require('./assets/gameData/UnitDatas/'+bit+'.json')}/>
+	            ))}
+          	</Grid>
+		</Container>
+	);
+};
+
+export default Bitdex;

@@ -1,0 +1,1 @@
+{"AbilityID":"Mushroom","AbilityName":"Mushroom","AbilityDescription":"Grow a 1 health mushroom at the target location","EnergyCost":2,"AbilityStrength":0,"Modifier":0,"Type":4,"EffectSize":0,"StartPosition":1,"ProjectileType":0,"EffectDisplay":0,"SummonableUnitID":"Mushroom","ApplicableStatusID":"","RemovableStatusID":"","ImmediateSelfCast":false}

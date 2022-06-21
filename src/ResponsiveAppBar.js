@@ -9,8 +9,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 
-const pages = ['Play', 'Bitdex', 'About'];
+const pages = ['Play', 'Bitdex'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,15 +28,16 @@ const ResponsiveAppBar = () => {
     <AppBar position="sticky">
       <Container maxWidth={false}>
         <Toolbar disableGutters>
-          <Box
-            component="img"
-            sx={{
-              height: '20pt'
-            }}
-            alt="3bit"
-            src={require('./assets/png/3bit_sans_tactics.png')}
-          />
-
+          <Link to="/">
+            <Box
+              component="img"
+              sx={{
+                height: '20pt'
+              }}
+              alt="3bit"
+              src={require('./assets/png/3bit_sans_tactics.png')}
+            />
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', sm: 'none' } }} justifyContent="flex-end">
             <IconButton
               size="large"
@@ -66,30 +68,34 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem 
-                  key={page} 
-                  onClick={handleCloseNavMenu} 
-                  sx={{
-                    pl: '30pt',
-                    pr: '30pt',
-                  }}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                <Link to={page}>
+                  <MenuItem 
+                    key={page} 
+                    onClick={handleCloseNavMenu} 
+                    sx={{
+                      pl: '30pt',
+                      pr: '30pt',
+                    }}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' } }} justifyContent="flex-end">
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                color="light"
-                variant="contained" 
-                sx={{ my: 2, display: 'block', margin: '3px', fontWeight:'600' }}
-              >
-                {page}
-              </Button>
+              <Link to={page}>
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  color="light"
+                  variant="contained" 
+                  sx={{ my: 2, display: 'block', margin: '3px', fontWeight:'600' }}
+                >
+                  {page}
+                </Button>
+              </Link>
             ))}
           </Box>
 

@@ -1,0 +1,1 @@
+{"AbilityID":"Explosion","AbilityName":"Explosion","AbilityDescription":"Explode on death, dealing 3 damage to all nearby units","EnergyCost":0,"AbilityStrength":3,"Modifier":0,"Type":0,"EffectSize":1,"StartPosition":0,"ProjectileType":0,"EffectDisplay":1,"SummonableUnitID":"","ApplicableStatusID":"","RemovableStatusID":"","ImmediateSelfCast":false}
