@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 
+
 const pages = ['Play', 'Bitdex'];
 
 const ResponsiveAppBar = () => {
@@ -91,8 +92,16 @@ const ResponsiveAppBar = () => {
                   onClick={handleCloseNavMenu}
                   color="light"
                   variant="contained" 
-                  sx={{ my: 2, display: 'block', margin: '3px', fontWeight:'600' }}
-                >
+                  sx={{ 
+                    my: 2, 
+                    display: 'block', 
+                    margin: '3px', 
+                    fontWeight:'600',
+                    boxShadow: 0,
+                    "&.MuiButtonBase-root:hover": {
+                      boxShadow: 0,
+                    } 
+                  }}>
                   {page}
                 </Button>
               </Link>
