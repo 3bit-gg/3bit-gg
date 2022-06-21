@@ -49,19 +49,20 @@ const BitCard = ({bit}) => {
 	                  {bit.MaxHealth}
 	                </Typography>
               	</Box>
-              	<CardMedia
-                    component="img"
-                    sx={{
-                    	m: '10pt',
-                    	mb: '6pt',
-                    	width: 'calc(100% - 20pt)',
-                    	height: 'calc(100% - 20pt)',
-                    	backgroundColor: 'card.background',
-                    	borderRadius: '5pt',
-                    }}
-                    image={require('./assets/png/bits/' + bit.UnitID + '.png')}
-                    alt="random"
+              	 <CardMedia
+	                  component="img"
+	                  sx={{
+	                    m: '10pt',
+	                    mb: '6pt',
+	                    width: 'calc(100% - 20pt)',
+	                    minHeight: '100pt',
+	                    backgroundColor: 'card.background',
+	                    borderRadius: '5pt',
+	                  }}
+	                  image={require('./assets/png/bits/' + bit.UnitID + '.png')}
+	                  alt={bit}
               	/>
+              	
               	<Box sx={{ flexGrow: 1, mb: 1 }}>
               		<MoveInfo bit={bit}/>
 	                <AbilityInfo ability={require('./assets/gameData/AbilityDatas/'+bit.AbilityIDs[0]+'.json')}/>

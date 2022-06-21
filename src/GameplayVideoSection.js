@@ -7,7 +7,6 @@ const GameplayVideoSection = () => {
 		<Container 
 			display="flex"
 			direction="column"
-			justifyContent="center"
 			maxWidth={false}
 			sx ={{
 				bgcolor: 'background.paper',

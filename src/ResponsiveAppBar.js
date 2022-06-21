@@ -10,9 +10,39 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+import Twitter from "@mui/icons-material/Twitter";
+import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
+import AppsIcon from '@mui/icons-material/Apps';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { faPlay, faLayerGroup } from '@fortawesome/free-solid-svg-icons'
 
-
-const pages = ['Play', 'Bitdex'];
+const pages = [
+  {
+    'title':'Twitter',
+    'link': 'https://twitter.com/3bitgg',
+    'icon': <FontAwesomeIcon icon={faTwitter} style={{'marginRight': "5px"}} />,
+    'external': true
+  }, 
+  {
+    'title':'Discord',
+    'link': 'https://discord.gg/9dnsm3H2nt',
+    'icon': <FontAwesomeIcon icon={faDiscord} style={{'marginRight': "5px"}} />,
+    'external': true
+  }, 
+  {
+    'title':'Bitdex',
+    'link': 'bitdex',
+    'icon': <FontAwesomeIcon icon={faLayerGroup} style={{'marginRight': "5px"}}/>,
+    'external': false
+  },
+  {
+    'title':'Play',
+    'link': 'play',
+    'icon': <FontAwesomeIcon icon={faPlay} style={{'marginRight': "5px"}} />,
+    'external': false
+  }, 
+];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -24,6 +54,36 @@ const ResponsiveAppBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const buttonElement= (page) => {
+    return <Button
+      onClick={handleCloseNavMenu}
+      color="light"
+      variant="contained" 
+      sx={{ 
+        my: 2, 
+        display: 'block', 
+        margin: '3px', 
+        fontWeight:'600',
+        boxShadow: 0,
+        "&.MuiButtonBase-root:hover": {
+          boxShadow: 0,
+        } 
+      }}>
+      {page.icon} {page.title}
+    </Button>;
+  }
+
+  const listElement= (page) => {
+    return <MenuItem 
+      onClick={handleCloseNavMenu} 
+      sx={{
+        pl: '30pt',
+        pr: '30pt',
+      }}>
+      <Typography textAlign="center">{page.icon} {page.title}</Typography>
+    </MenuItem>;
+  }
 
   return (
     <AppBar position="sticky">
@@ -69,42 +129,25 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <Link to={page}>
-                  <MenuItem 
-                    key={page} 
-                    onClick={handleCloseNavMenu} 
-                    sx={{
-                      pl: '30pt',
-                      pr: '30pt',
-                    }}>
-                    <Typography textAlign="center">{page}</Typography>
-                  </MenuItem>
-                </Link>
+                <div key={page.title}>
+                  {page.external 
+                    ? <a key={page.title} href={page.link} target="_blank"> {listElement(page)} </a>
+                    : <Link key={page.title} to={page.link}> {listElement(page)} </Link>
+                  }
+
+                </div>
               ))}
             </Menu>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' } }} justifyContent="flex-end">
             {pages.map((page) => (
-              <Link to={page}>
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  color="light"
-                  variant="contained" 
-                  sx={{ 
-                    my: 2, 
-                    display: 'block', 
-                    margin: '3px', 
-                    fontWeight:'600',
-                    boxShadow: 0,
-                    "&.MuiButtonBase-root:hover": {
-                      boxShadow: 0,
-                    } 
-                  }}>
-                  {page}
-                </Button>
-              </Link>
+              <div key={page.title}>
+                {page.external 
+                  ? <a key={page.title} href={page.link} target="_blank"> {buttonElement(page)} </a>
+                  : <Link key={page.title} to={page.link}> {buttonElement(page)} </Link>
+                }
+              </div>
             ))}
           </Box>
 

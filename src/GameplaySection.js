@@ -7,7 +7,6 @@ const GameplaySection = () => {
 		<Container 
 			display="flex"
 			direction="column"
-			justifyContent="center"
 			maxWidth={false}
 			sx ={{
 				bgcolor: 'background.paper',
@@ -19,8 +18,8 @@ const GameplaySection = () => {
 	        <br/>
 	        <br/>
         	<Typography color="text.primary" variant="body2" align="center">
-	        	&bull;  No metaverse  &bull;<br/>
 	        	&bull;  No hype  &bull;<br/>
+	        	&bull;  No metaverse  &bull;<br/>
 	        	&bull;  Just a good game  &bull;
 	        </Typography>
 		</Container>

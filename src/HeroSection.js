@@ -12,7 +12,6 @@ const HeroSection = () => {
 		<Container 
 			display="flex"
 			direction="column"
-			justifyContent="center"
 			maxWidth={false}
 			sx ={{
 				minHeight: 'calc(100vh - 50pt)',

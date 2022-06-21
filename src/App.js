@@ -74,8 +74,8 @@ function App() {
             <ResponsiveAppBar/>
             <Routes>
               <Route path="/" element={<Home/>} exact />
-              <Route path="/Play" element={<Play/>} />
-              <Route path="/Bitdex" element={<Bitdex/>} />
+              <Route path="/play" element={<Play/>} />
+              <Route path="/bitdex" element={<Bitdex/>} />
             </Routes>
              <Footer/>
         </Router>

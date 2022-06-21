@@ -10,7 +10,7 @@ const Bitdex = () => {
 	 	<Container sx={{ p: '0', pt: 10 }} maxWidth='lg'>
 		 	<Grid container spacing={2} justifyContent="center" alignItems="center">
             	{bits.map((bit) => (
-      				<BitCard bit={require('./assets/gameData/UnitDatas/'+bit+'.json')}/>
+      				<BitCard key={bit} bit={require('./assets/gameData/UnitDatas/'+bit+'.json')}/>
 	            ))}
           	</Grid>
 		</Container>
