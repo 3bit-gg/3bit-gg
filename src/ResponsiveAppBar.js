@@ -10,9 +10,6 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-import Twitter from "@mui/icons-material/Twitter";
-import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
-import AppsIcon from '@mui/icons-material/Apps';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faPlay, faLayerGroup } from '@fortawesome/free-solid-svg-icons'
@@ -131,7 +128,7 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <div key={page.title}>
                   {page.external 
-                    ? <a key={page.title} href={page.link} target="_blank"> {listElement(page)} </a>
+                    ? <a key={page.title} href={page.link} target="_blank" rel="noreferrer"> {listElement(page)} </a>
                     : <Link key={page.title} to={page.link}> {listElement(page)} </Link>
                   }
 
@@ -144,7 +141,7 @@ const ResponsiveAppBar = () => {
             {pages.map((page) => (
               <div key={page.title}>
                 {page.external 
-                  ? <a key={page.title} href={page.link} target="_blank"> {buttonElement(page)} </a>
+                  ? <a key={page.title} href={page.link} target="_blank" rel="noreferrer"> {buttonElement(page)} </a>
                   : <Link key={page.title} to={page.link}> {buttonElement(page)} </Link>
                 }
               </div>
