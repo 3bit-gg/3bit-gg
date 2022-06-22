@@ -56,7 +56,7 @@ const BitCard = ({bit}) => {
 	                    mb: '6pt',
 	                    width: 'calc(100% - 20pt)',
 	                    minHeight: '100pt',
-	                    backgroundColor: 'card.background',
+	                    background: 'linear-gradient(to bottom, #6D66FF, #1a1a1a)',
 	                    borderRadius: '5pt',
 	                  }}
 	                  image={require('./assets/png/bits/' + bit.UnitID + '.png')}
