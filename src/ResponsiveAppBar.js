@@ -90,7 +90,7 @@ const ResponsiveAppBar = () => {
             <Box
               component="img"
               sx={{
-                height: '20pt'
+                height: '25pt'
               }}
               alt="3bit"
               src={require('./assets/png/3bit_sans_tactics.png')}

@@ -77,7 +77,7 @@ function App() {
               <Route path="/play" element={<Play/>} />
               <Route path="/bitdex" element={<Bitdex/>} />
             </Routes>
-             <Footer/>
+            <Footer/>
         </Router>
        
       </ThemeProvider>
