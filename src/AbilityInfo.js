@@ -3,7 +3,10 @@ import Box from '@mui/material/Box'
 
 function GetAbilityDescription(abilityDescriptionRaw)
 {
-	return abilityDescriptionRaw.replace('<color=#fff>', '').replace('</color>', '');
+	var regex = /<color=.+?>/g;
+	abilityDescriptionRaw = abilityDescriptionRaw.replaceAll(regex, '');
+	abilityDescriptionRaw = abilityDescriptionRaw.replaceAll('</color>', '');
+	return abilityDescriptionRaw;
 }
 
 const AbilityInfo = ({ability}) => {

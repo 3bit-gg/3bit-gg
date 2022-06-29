@@ -1,0 +1,1 @@
+{"AbilityID":"Charge","AbilityName":"Charge","AbilityDescription":"Add 1 BFG charge","EnergyCost":1,"AbilityStrength":0,"Modifier":0,"Type":1,"EffectSize":0,"Range":0,"EffectDisplay":0,"LaserDisplay":0,"IconType":3,"IconColor":2,"SummonableUnitID":"","ApplicableStatusID":"BFGCharge","ApplicableStatusStacks":1,"RemovableStatusID":"","ImmediateSelfCast":true}

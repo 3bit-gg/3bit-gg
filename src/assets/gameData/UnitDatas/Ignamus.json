@@ -1,0 +1,1 @@
+{"UnitID":"Ignamus","UnitName":"Ignamus","MaxHealth":5,"MoveDistance":1,"MoveCost":1,"Neutral":false,"Selectable":true,"Modifier":0,"AbilityIDs":["HeatWave","BoulderFist"],"DefaultStatuses":[{"StatusID":"Explosive","StatusStacks":1}]}

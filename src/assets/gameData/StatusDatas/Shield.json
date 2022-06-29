@@ -1,1 +1,1 @@
-{"StatusID":"Shield","Type":2,"AbilityID":"","StatusStrength":1,"Permanent":false,"RemainingTurns":1,"DelayFalloffUntilEndOfTurn":false,"Name":"Shielded","Description":"Block the next source of direct damage"}
+{"StatusID":"Shield","Type":2,"AutoExecute":0,"AbilityID":"","StatusStrength":1,"Name":"Shielded","Description":"Block the next direct damage","DisplayStackCount":false}

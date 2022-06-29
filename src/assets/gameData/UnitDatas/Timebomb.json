@@ -1,1 +1,1 @@
-{"UnitID":"Timebomb","UnitName":"Time Bomb","MaxHealth":3,"MoveDistance":0,"MoveCost":0,"Neutral":true,"Selectable":false,"Modifier":0,"AbilityIDs":[],"StatusIDs":["ExplodeOnDeath","ShortLived3Turns"]}
+{"UnitID":"Timebomb","UnitName":"Time Bomb","MaxHealth":3,"MoveDistance":0,"MoveCost":0,"Neutral":true,"Selectable":false,"Modifier":0,"AbilityIDs":[],"DefaultStatuses":[{"StatusID":"Explosive","StatusStacks":1},{"StatusID":"ShortLived","StatusStacks":3}]}

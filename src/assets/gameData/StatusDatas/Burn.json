@@ -1,1 +1,1 @@
-{"StatusID":"Burn","Type":5,"AbilityID":"","StatusStrength":1,"Permanent":false,"RemainingTurns":3,"DelayFalloffUntilEndOfTurn":false,"Name":"Burned","Description":"Take 1 damage at the start of each turn"}
+{"StatusID":"Burn","Type":5,"AutoExecute":1,"AbilityID":"","StatusStrength":1,"Name":"Burned","Description":"Damage for 1 at the start of each turn","DisplayStackCount":true}
