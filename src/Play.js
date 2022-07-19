@@ -3,6 +3,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Stack from '@mui/material/Stack'
+// import Button from '@mui/material/Button'
 
 const Play = () => {
 	return (
@@ -38,10 +39,22 @@ const Play = () => {
 				        	<br/>
 				        	Please follow our <a href="https://twitter.com/3bitgg" target="_blank" rel="noreferrer"><u>Twitter</u></a> for updates!
 				        </Typography>
-				       {/*  <Link style={{display: 'flex'}} to="/play"> */}
-				      	{/* 	<Button sx={{my: 4, mx: 'auto', width:"70%"}} variant="outlined" color='white'>Download</Button> */}
-				      	{/* </Link> */}
 					</Stack>
+					{/* <Stack> */}
+					{/* 	<Typography color="text.primary" variant='h6' align="center" gutterBottom sx={{p: '20pt'}}> */}
+				 {/*        	3Bit Tactics is currently in alpha testing. */}
+				 {/*        	<br/> */}
+				 {/*        	Launching 2022. */}
+				 {/*        </Typography> */}
+				 {/*        <Typography color="text.primary" variant='body2' align="center" gutterBottom> */}
+				 {/*        	Download the alpha build below! */}
+				 {/*        	<br/> */}
+				 {/*        	We will have limited time windows for online play that will be announced via our  <a href="https://twitter.com/3bitgg" target="_blank" rel="noreferrer"><u>Twitter</u></a>, though offline bot games are always available. */}
+				 {/*        </Typography> */}
+				 {/*        <a href={require('./downloads/3Bit_0.0.0.zip')} download="3Bit_0.0.0.zip"> */}
+		   {/*      			<Button sx={{my: 4, mx: 'auto', width:"70%", maxWidth: "300px"}} variant="outlined" color='white'>Windows v0.0.0</Button> */}
+			  {/*       	</a> */}
+					{/* </Stack> */}
 		     	</Grid>
 			</Grid>
 		</Container>
