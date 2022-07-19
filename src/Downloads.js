@@ -3,7 +3,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Stack from '@mui/material/Stack'
-import Link from '@mui/material/Link'
 import Button from '@mui/material/Button'
 
 const Play = () => {
