@@ -30,7 +30,7 @@ const Play = () => {
 			        }}>
 			        <Stack>
 						<Typography color="text.primary" variant='h6' align="center" gutterBottom sx={{p: '20pt'}}>
-				        	3Bit Tactics downloads:
+				        	3Bit Tactics Downloads
 				        </Typography>
 				        <a href={require('./downloads/3Bit_0.0.0.zip')} download="3Bit_0.0.0.zip">
 		        			<Button sx={{my: 4, mx: 'auto', width:"70%", maxWidth: "300px"}} variant="outlined" color='white'>Windows v0.0.0</Button>
