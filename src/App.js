@@ -3,7 +3,6 @@ import Footer from './Footer';
 import Home from './Home';
 import Play from './Play';
 import Bitdex from './Bitdex';
-import Downloads from './Downloads';
 import { createTheme, ThemeProvider, ThemeOptions } from '@mui/material/styles';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -77,7 +76,6 @@ function App() {
               <Route path="/" element={<Home/>} exact />
               <Route path="/play" element={<Play/>} />
               <Route path="/bitdex" element={<Bitdex/>} />
-              <Route path="/downloads" element={<Downloads/>} />
             </Routes>
             <Footer/>
         </Router>
