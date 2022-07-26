@@ -3,7 +3,7 @@ import BitCard from './BitCard'
 import Grid from '@mui/material/Grid'
 import Container from '@mui/material/Container'
 
-const bits = ['BombDog', 'Cocoda', 'Draka', 'Doodeloon', 'Protoscope'];
+const bits = ['BombDog', 'Cocoda', 'Draka', 'Doodeloon', 'Protoscope', 'Gyrobee'];
 
 const Bitdex = () => {
 	return (

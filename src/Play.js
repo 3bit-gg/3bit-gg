@@ -51,8 +51,8 @@ const Play = () => {
 				        	<br/>
 				        	We will have limited time windows for online play that will be announced via our  <a href="https://twitter.com/3bitgg" target="_blank" rel="noreferrer"><u>Twitter</u></a>, though offline bot games are always available.
 				        </Typography>
-				        <a href={require('./downloads/3Bit_0.0.0.zip')} download="3Bit_0.0.0.zip">
-		        			<Button sx={{my: 4, mx: 'auto', width:"70%", maxWidth: "300px"}} variant="outlined" color='white'>Windows v0.0.0</Button>
+				        <a href={require('./downloads/3Bit_0.0.1.zip')} download="3Bit_0.0.1.zip">
+		        			<Button sx={{my: 4, mx: 'auto', width:"70%", maxWidth: "300px"}} variant="outlined" color='white'>Windows 0.0.1</Button>
 			        	</a>
 					</Stack>
 		     	</Grid>
