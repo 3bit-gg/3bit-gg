@@ -27,12 +27,12 @@ const pages = [
     'icon': <FontAwesomeIcon icon={faDiscord} style={{'marginRight': "5px"}} />,
     'external': true
   }, 
-  {
-    'title':'Bitdex',
-    'link': 'bitdex',
-    'icon': <FontAwesomeIcon icon={faLayerGroup} style={{'marginRight': "5px"}}/>,
-    'external': false
-  },
+  // {
+  //   'title':'Bitdex',
+  //   'link': 'bitdex',
+  //   'icon': <FontAwesomeIcon icon={faLayerGroup} style={{'marginRight': "5px"}}/>,
+  //   'external': false
+  // },
   {
     'title':'Play',
     'link': 'play',
