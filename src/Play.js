@@ -31,7 +31,7 @@ const Play = () => {
 						<Typography color="text.primary" variant='h6' align="center" gutterBottom sx={{p: '20pt'}}>
 				        	3Bit Tactics is currently in development.
 				        	<br/>
-				        	Launching for PC on Steam in 2022.
+				        	Launching for PC + mobile in 2022.
 				        </Typography>
 				        <Typography color="text.primary" variant='body2' align="center" gutterBottom>
 				        	We are approaching our first beta test.
