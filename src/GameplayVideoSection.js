@@ -20,7 +20,7 @@ const GameplayVideoSection = () => {
 			  loop 
 			  src={require('./assets/video/Gameplay_1.mp4')} 
 			  sx ={{
-			  	width: {xs:'100%', sm:'80%', md: '50%'},
+			  	width: {xs:'80%', sm:'40%', md: '20%'},
 			  	height: '100%',
 			  	borderRadius: '10pt',
 			  	border: 5,
