@@ -13,7 +13,7 @@ const GameplaySection = () => {
 				p: '50pt'
 			}}>
 			<Typography color="text.primary" variant='body1' align="center" gutterBottom>
-	        	1v1 Tactics Arena.<br/>Inspired by Chess, MOBAs and Card Battlers.<br/>Launching for PC + mobile in 2022.
+	        	1v1 Tactics Arena.<br/>Inspired by Chess, MOBAs and Card Battlers.<br/>Launching for iOS/Android in 2022.
 	        </Typography>
 		</Container>
 	);
